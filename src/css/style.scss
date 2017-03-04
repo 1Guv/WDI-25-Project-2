@@ -1,1 +1,42 @@
+// body {
+//   background-color: #e6b800;
+// }
 
+main {
+  background-color: #EBC632;
+  // background-image:
+  //       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  //       url('//example.com/image.jpg');
+}
+
+.logo {
+  color: red;
+  font-family: verdana;
+  font-weight: bold;
+
+}
+
+.container {
+  // background-color: red;
+}
+
+.tag-line-div {
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  color: white;
+  // font-family: 'brandon-grotesque', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  #tag-line-1 {
+    margin-top: 20%;
+    font-size: 55px;
+  }
+  #tag-line-2 {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+}
