@@ -3,10 +3,10 @@
 // }
 
 main {
-  background-color: #EBC632;
-  // background-image:
-  //       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  //       url('//example.com/image.jpg');
+  // background-color: #EBC632;
+  background-image:
+        linear-gradient(rgba(212, 152, 0, 1.0), rgba(212, 152, 0, 0.8)),
+        // url('//example.com/image.jpg');
 }
 
 .logo {
@@ -21,9 +21,10 @@ main {
 }
 
 .tag-line-div {
+  // background-color: red;
   width: 100%;
   text-align: center;
-  height: 300px;
+  height: 400px;
   color: white;
   // font-family: 'brandon-grotesque', sans-serif;
   // font-family: 'Open Sans', sans-serif;
@@ -31,12 +32,18 @@ main {
   font-style: normal;
   font-weight: 700;
   #tag-line-1 {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 55px;
+    letter-spacing: 2px;
+    // text-shadow: 1px 1px black;
   }
   #tag-line-2 {
     color: black;
     font-size: 15px;
     letter-spacing: 4px;
   }
+}
+
+.car-make {
+  position: relative;
 }
