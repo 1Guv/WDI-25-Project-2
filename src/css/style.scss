@@ -4,6 +4,7 @@
 
 main {
   // background-color: #EBC632;
+  height: 100vh;
   background-image:
         linear-gradient(rgba(212, 152, 0, 1.0), rgba(212, 152, 0, 0.8)),
         // url('http://blog.caranddriver.com/wp-content/uploads/2016/12/2017-Lamborghini-Aventador-S-coupe-103-876x535.jpg');
@@ -94,6 +95,10 @@ main {
 .news {
   background: #ededeb;
   width: 100%;
-  height: 100px;
-  
+  height: 100%;
+  text-align: center;
+}
+
+.row.homepage {
+  margin-top: 20%
 }
