@@ -15,15 +15,15 @@
         <ul class="nav navbar-nav navbar-right">
 
           <li><a class="" href="/">Home</a></li>
-          <li><a class="" href="/about">About</a></li>
-          <li><a href="/Cars/new">Add Car</a></li>
+          <li><a class="" href="/find-out-more">Find Out More</a></li>
+          <%# <li><a href="/Cars/new">Add Car</a></li>%>
 
           <% if(locals.isAuthenticated) { %>
                 <li class="">
                   <a class="" href="/logout">Logout</a>
                 </li>
                 <li>
-                <a class="" href="/search">Search</a>
+                <a class="" href="/users/<%= user.id %>">Profile</a>
                 </li>
               <% } else { %>
                 <li class="">

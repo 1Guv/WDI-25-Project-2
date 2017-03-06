@@ -15,6 +15,10 @@ main {
         background-size: cover;
 }
 
+h1 {
+  text-align: center;
+}
+
 .logo {
   color: red;
   font-family: verdana;
@@ -47,6 +51,7 @@ main {
     color: black;
     font-size: 12px;
     letter-spacing: 2px;
+    padding-bottom: 2%;
   }
   button {
     // width: 100%;
@@ -81,9 +86,10 @@ main {
   color: #ebc632;
   font-size: 10px;
   padding: 10px 20px 10px 20px;
-  border: solid #fafafa 1px;
+  border: solid #fafafa 2px;
   text-decoration: none;
   outline: none;
+  margin: 10px;
 }
 
 .rbtn:hover {
@@ -102,4 +108,8 @@ main {
 
 .row.homepage {
   margin-top: 20%
+}
+
+.form-display {
+  text-align: center;
 }

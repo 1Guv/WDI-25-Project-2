@@ -57,6 +57,8 @@ app.use(authentication);
 // set up our routes - just before our error handler
 app.use(routes);
 
+
+
 // set up our error handler - should be our LAST middleware
 app.use(errorHandler);
 
