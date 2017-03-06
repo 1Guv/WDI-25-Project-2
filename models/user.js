@@ -10,9 +10,15 @@ const userSchema = new mongoose.Schema({
   addressLine1: {type: String},
   addressLine2: {type: String},
   postcode: {type: String},
-  profilePic: {type: String}
-
+  image: {type: String}
 });
+
+userSchema
+  .virtual('imageSRC')
+  .get(function getImageSRC() {
+    if(!this.image) return null; // add placeholder image here if need be
+    return `https://s3-eu-west-1.amazonaws.com/wdi-25-london-project-02/${this.image}`;
+  });
 
 userSchema
   .virtual('passwordConfirmation')
