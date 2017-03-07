@@ -13,9 +13,16 @@ $(function () {
   var currentIndex = 0;
 
   setInterval(function () {
-    console.log(listOfModels[currentIndex]);
+    // console.log(listOfModels[currentIndex]);
     $('#tag-line-1').text(listOfModels[currentIndex]);
     currentIndex++;
     if (currentIndex === listOfModels.length) currentIndex = 0;
-  }, 1000);
+  }, 500);
+
+  $('a').click(function () {
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500);
+    return false;
+  });
 });

@@ -12,7 +12,11 @@
 
         <a class="navbar-brand logo" href="/">Exclusive SuperCar Swap Club</a>
 
-        <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+        <% for(const type in messages) { %>
+          <li><%= messages[type] %></li>
+        <% } %>
+
 
           <li><a class="" href="/">Home</a></li>
           <li><a class="" href="/find-out-more">Find Out More</a></li>

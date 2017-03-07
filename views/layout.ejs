@@ -30,13 +30,8 @@
   </head>
     <% include ./partials/navbar %>
   <body>
-    <% for(const type in messages) { %>
-      <div class="<%= type %>">
-        <h5><%= messages[type] %></h5>
-      </div>
-    <% } %>
     <main>
-      <%- body %>
+  <%- body %>
     </main>
   </body>
 </html>

@@ -4,11 +4,24 @@ const sessions = require('../controllers/sessions');
 const secureRoute = require('../lib/secureRoute');
 const users = require('../controllers/users');
 const upload = require('../lib/upload');
+const supercars = require('../controllers/supercars');
 
 router.get('/', (req, res) => res.render('statics/index'));
 
+// router.route('/supercars/new')
+//   .get(supercars.new);
+
+router.get('/supercars/map', (req, res) => res.render('supercars/map'));
+
+router.get('/supercars/new', (req, res) => res.render('supercars/new'));
+
+router.route('/supercars')
+  .get(supercars.index)
+  .post(upload.single('carpic'), supercars.create);
+
 router.route('/users')
   .get(users.index);
+
 router.route('/users/:id')
   .get(users.show)
   .put(users.update)
