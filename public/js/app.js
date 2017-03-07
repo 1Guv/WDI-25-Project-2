@@ -10,12 +10,6 @@ $(function () {
   var users = $('.map1').data('users');
   console.log(users);
 
-  users.forEach(function (user) {
-    console.log(user.postcode);
-    userPostcodesArr.push(user.postcode);
-    console.log(userPostcodesArr);
-  });
-
   var $tagLine1 = $('#tag-line-1');
   console.log($tagLine1.text());
 
@@ -35,6 +29,12 @@ $(function () {
       scrollTop: $($(this).attr('href')).offset().top
     }, 500);
     return false;
+  });
+
+  users.forEach(function (user) {
+    console.log(user.postcode);
+    userPostcodesArr.push(user.postcode);
+    console.log(userPostcodesArr);
   });
 
   initMap();

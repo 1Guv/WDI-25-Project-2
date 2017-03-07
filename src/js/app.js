@@ -8,12 +8,6 @@ $(() => {
   const users = $('.map1').data('users');
   console.log(users);
 
-  users.forEach((user) => {
-    console.log(user.postcode);
-    userPostcodesArr.push(user.postcode);
-    console.log(userPostcodesArr);
-  });
-
   const $tagLine1 = $('#tag-line-1');
   console.log($tagLine1.text());
 
@@ -33,6 +27,12 @@ $(() => {
       scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
+  });
+
+  users.forEach((user) => {
+    console.log(user.postcode);
+    userPostcodesArr.push(user.postcode);
+    console.log(userPostcodesArr);
   });
 
   initMap();
