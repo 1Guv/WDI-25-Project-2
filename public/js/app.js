@@ -5,6 +5,17 @@ $(function () {
   // const greeting = 'yo yo';
   // console.log(`${greeting} Guv`);
 
+  var userPostcodesArr = [];
+
+  var users = $('.map1').data('users');
+  console.log(users);
+
+  users.forEach(function (user) {
+    console.log(user.postcode);
+    userPostcodesArr.push(user.postcode);
+    console.log(userPostcodesArr);
+  });
+
   var $tagLine1 = $('#tag-line-1');
   console.log($tagLine1.text());
 
@@ -25,4 +36,18 @@ $(function () {
     }, 500);
     return false;
   });
+
+  initMap();
+
+  function initMap() {
+    var uluru = { lat: 51.515113, lng: -0.072051 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
 });

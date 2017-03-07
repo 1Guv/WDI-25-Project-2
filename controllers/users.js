@@ -1,4 +1,15 @@
 const User = require('../models/user');
+const Supercar = require('../models/supercar');
+
+function mapRoute(req, res, next) {
+  User
+    .find()
+    .exec()
+    .then((users) => {
+      res.render('supercars/map', { users });
+    })
+    .catch(next);
+}
 
 function indexRoute(req, res) {
   User
@@ -16,13 +27,20 @@ function newRoute(req, res){
   res.render('users/new');
 }
 
-function showRoute(req, res) {
+function showRoute(req, res, next) {
   User
     .findById(req.params.id)
     .exec()
     .then((user) => {
       if(!user) return res.status(404).send('Not found');
-      res.render('users/show', { user });
+
+      Supercar
+        .find({createdBy: user.id})
+        .exec()
+        .then((cars) => {
+          res.render('users/show', { user, cars });
+        })
+        .catch(next);
     })
     .catch((err) => {
       res.status(500).end(err);
@@ -92,6 +110,7 @@ function deleteRoute(req, res) {
 }
 
 module.exports = {
+  map: mapRoute,
   index: indexRoute,
   new: newRoute,
   show: showRoute,

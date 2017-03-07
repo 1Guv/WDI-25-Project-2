@@ -11,7 +11,8 @@ router.get('/', (req, res) => res.render('statics/index'));
 // router.route('/supercars/new')
 //   .get(supercars.new);
 
-router.get('/supercars/map', (req, res) => res.render('supercars/map'));
+router.route('/map')
+  .get(users.map);
 
 router.get('/supercars/new', (req, res) => res.render('supercars/new'));
 

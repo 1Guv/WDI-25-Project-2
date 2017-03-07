@@ -14,3 +14,17 @@
   <a class="rbtn" href="/supercars/new">ADD MY SUPERCAR</a>
   <a class="rbtn" href="/supercars/">SEARCH FOR SUPERCARS</a>
 </div>
+
+<p></p>
+    <div class="map1" data-user="<%= JSON.stringify(user) %>"></div>
+
+<h2>My Super Cars</h2>
+<p></p>
+<div class="">
+  <% cars.forEach((car) => { %>
+    <h1><%= car.make %></h1>
+    <h1><%= car.model %></h1>
+    <h1><%= car.carpic %></h1>
+    <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="100" width="200">
+  <% }) %>
+</div>

@@ -7,9 +7,6 @@ main {
   height: 100vh;
   background-image:
         linear-gradient(rgba(212, 152, 0, 1.0), rgba(212, 152, 0, 0.8)),
-        // url('http://blog.caranddriver.com/wp-content/uploads/2016/12/2017-Lamborghini-Aventador-S-coupe-103-876x535.jpg');
-        // url('http://blog.caranddriver.com/wp-content/uploads/2016/12/2017-Lamborghini-Aventador-S-coupe-105-876x535.jpg');
-        // url('http://www.hdcarwallpapers.com/walls/2017_mcchip_dkr_lamborghini_aventador_2-HD.jpg');
         url('/assets/images/aventador.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -120,5 +117,11 @@ form {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    // text-align: left;
+    align: center;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+ }

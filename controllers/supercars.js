@@ -16,6 +16,7 @@ function newRoute(req, res) {
 function createRoute(req, res, next) {
 
   req.body.createdBy = req.user;
+  if(req.file) req.body.carpic = req.file.key;
 
   Supercar
     .create(req.body)

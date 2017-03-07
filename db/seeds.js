@@ -40,6 +40,9 @@ User
         createdBy: users[0]
       }]);
   })
+
+
+
   .then((cars) => console.log(`${cars.length} cars created`))
   .catch((err) => console.log(err))
   .finally(() => mongoose.connection.close());

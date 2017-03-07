@@ -19,4 +19,12 @@ const supercarSchema = new mongoose.Schema({
   comments: [ commentSchema ]
 });
 
+supercarSchema
+  .virtual('imageSRC')
+  .get(function getImageSRC() {
+    if(!this.carpic) return null;
+    if(this.carpic.match(/^http/)) return this.carpic;
+    return `https://s3-eu-west-1.amazonaws.com/wdi-25-london-project-02/${this.carpic}`;
+  });
+
 module.exports = mongoose.model('Supercar', supercarSchema);

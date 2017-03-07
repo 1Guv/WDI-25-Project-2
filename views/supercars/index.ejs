@@ -1,14 +1,15 @@
 <h1>SUPERCARS INDEX</h1>
 
 <div class="">
-  <a class="rbtn" href="/supercars/map">MAP</a>
+  <a class="rbtn" href="/map">MAP</a>
   <a class="rbtn" href="/supercars/">LIST</a>
 </div>
 
+<div class="map1" data-user="<%= JSON.stringify(user) %>"></div>
 
 <% supercars.forEach((car) => { %>
   <h1><%= car.make %></h1>
   <h1><%= car.model %></h1>
   <h1><%= car.carpic %></h1>
-  <img src="<%= car.carpic %>" alt="<%= car.make %>" height="100" width="200">
+  <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="100" width="200">
 <% }) %>
