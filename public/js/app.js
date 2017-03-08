@@ -20,8 +20,8 @@ $(function () {
     $lng.val(location.lng);
   });
 
-  // Empty array used to hold current postcodes - but may not be needed
-  var userPostcodesArr = [];
+  var map = null;
+  var infowindow = null;
 
   // Gets the object called Users from the db
   var users = $('.map1').data('users');
@@ -53,28 +53,58 @@ $(function () {
   }
 
   // goes throught the users object to get the postcode then use geoloacter to convert to lat and long, however used Google address autocomplate instead to convert address into lat & lng automatically from the registrationpage and store in the database
-  if ($('.map1').length) {
-    users.forEach(function (user) {
-      console.log(user.postcode);
-      console.log(user.lat);
-      console.log(user.lng);
-      userPostcodesArr.push(user.postcode);
-      console.log(userPostcodesArr);
-    });
-  }
+
 
   if ($('.map1').length) initMap();
 
   function initMap() {
-    var uluru = { lat: 51.515113, lng: -0.072051 };
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
-      center: uluru
+    var london = { lat: 51.515113, lng: -0.072051 };
+
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: london
     });
-    var marker = new google.maps.Marker({
-      position: uluru,
+
+    new google.maps.Marker({
+      position: london,
       map: map
     });
+
+    addMarkers();
+  }
+
+  function addMarkers() {
+    users.forEach(function (user) {
+      addMarker(user);
+    });
+  }
+
+  function addMarker(user) {
+    // const latLng = latLng;
+    var image = 'http://www.apnaplates.com/app/webroot/GSS/test/ferrari-badge-small-4.png';
+    var latLng = { lat: user.lat, lng: user.lng };
+    console.log(latLng);
+    var marker = new google.maps.Marker({
+      position: latLng,
+      map: map,
+      icon: image
+    });
+
+    marker.addListener('click', function () {
+      markerClick(marker, user);
+    });
+  }
+
+  function markerClick(marker, user) {
+    if (infowindow) infowindow.close();
+
+    console.log(user);
+
+    infowindow = new google.maps.InfoWindow({
+      content: '\n      <div class="infowindow">\n        <a href="/users/' + user._id + '"><h3>' + user.username + '</h3></a>\n      </div>\n      '
+    });
+
+    infowindow.open(map, marker);
   }
 
   // functions to run
