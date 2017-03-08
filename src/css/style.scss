@@ -1,18 +1,14 @@
 body {
-  background-color: white;
+  background-color: #F0F0F0;
 }
 
 main {
   // background-color: #EBC632;
-  height: 100vh;
-  background-image:
-        linear-gradient(rgba(212, 152, 0, 1.0), rgba(212, 152, 0, 0.8)),
-        url('/assets/images/aventador.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+  // background-color: #F0F0F0;
+
 }
 
-h1 {
+h1 h2 {
   text-align: center;
 }
 
@@ -23,8 +19,14 @@ h1 {
 
 }
 
-.container {
+.homepage {
   // background-color: red;
+  height: 80vh;
+  background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+        url('/assets/images/aventador.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .tag-line-div {
@@ -45,7 +47,7 @@ h1 {
     // text-shadow: 1px 1px black;
   }
   #tag-line-2 {
-    color: black;
+    color: #ebc632;
     font-size: 12px;
     letter-spacing: 2px;
     padding-bottom: 2%;
@@ -104,7 +106,7 @@ h1 {
 }
 
 .row.homepage {
-  margin-top: 20%
+  margin-top: 4%
 }
 
 
@@ -122,6 +124,71 @@ form {
 }
 
 #map {
-  height: 400px;
+  height: 500px;
   width: 100%;
  }
+
+a.navbar-brand.logo {
+  color: #ebc632;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.find-out-more {
+  height: 80vh;
+  background-image:
+        // linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+        url('/assets/images/huracan.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // border: 10px solid #ebc632;
+}
+
+.fom {
+  color: white;
+  // background-color: #ff3399;
+  #fom {
+    color: #ebc632;
+    font-size: 20px;
+    letter-spacing: 2px;
+    // padding-bottom: 2%;
+  }
+}
+
+.fom-center {
+  // background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+.bbtn {
+  background: #fff;
+  background-image: -webkit-linear-gradient(top, #ffff, #ffff);
+  background-image: -moz-linear-gradient(top, #ffff, #ffff);
+  background-image: -ms-linear-gradient(top, #ffff, #ffff);
+  background-image: -o-linear-gradient(top, #ffff, #ffff);
+  background-image: linear-gradient(to bottom, #ffff, #ffff);
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  // font-weight: 700;
+  letter-spacing: 1px;
+  color: #ebc632;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ebc632 2px;
+  text-decoration: none;
+  outline: none;
+  margin: 10px;
+}
+
+.bbtn:hover {
+  background-color: rgba(0, 0, 0, 0.0);
+  text-decoration: none;
+  border: solid black 2px;
+  color: black;
+}
