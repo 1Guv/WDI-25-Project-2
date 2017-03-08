@@ -1,30 +1,42 @@
-<h1>PROFILE PAGE</h1>
-<h1><%= user.username %></h1>
-<h1><%= user.email %></h1>
-<h1><%= user.fname %></h1>
-<h1><%= user.sname %></h1>
-<h1><%= user.addressLine1 %></h1>
-<h1><%= user.addressLine2 %></h1>
-<h1><%= user.postcode %></h1>
-<img src="<%= user.imageSRC %>" alt="<%= user.username %>" height="100" width="200">
-
-<div class="">
-  <a class="rbtn" href="#">EDIT</a>
-  <a class="rbtn" href="#">DELETE MY ACCOUNT</a>
-  <a class="rbtn" href="/supercars/new">ADD MY SUPERCAR</a>
-  <a class="rbtn" href="/supercars/">SEARCH FOR SUPERCARS</a>
-</div>
-
-<p></p>
+<div class="container">
+  <div class="row">
+    <h2 class="fom-center">PROFILE PAGE</h2>
+    <div class="col-md-8">
+      <h5><span class="profile-page">Name: </span><%= user.fname %></h5>
+      <h5><span class="profile-page">Surname: </span><%= user.sname %></h5>
+      <h5><span class="profile-page">Email: </span><%= user.email %></h5>
+      <h5><span class="profile-page">Address: </span><%= user.postcode %></h5>
+      <div class="">
+        <br>
+        <a class="bbtn" href="#">EDIT</a>
+        <a class="bbtn" href="#">DELETE MY ACCOUNT</a>
+      </div>
+    </div>
+    <div class="col-md-4 fom-center">
+      <h2><span class="profile-page">Username:</span></h2>
+      <h5><%= user.username %></h5>
+      <img src="<%= user.imageSRC %>" alt="<%= user.username %>" height="50%" width="50%">
+      <div class="fom-center">
+        <a class="bbtn" href="/supercars/new">ADD MY SUPERCAR</a>
+        <br>
+        <br>
+        <a class="bbtn" href="/supercars/">SEARCH FOR SUPERCARS</a>
+      </div>
+    </div>
     <div class="map1" data-user="<%= JSON.stringify(user) %>"></div>
-
-<h2>My Super Cars</h2>
-<p></p>
-<div class="">
-  <% cars.forEach((car) => { %>
-    <h1><%= car.make %></h1>
-    <h1><%= car.model %></h1>
-    <h1><%= car.carpic %></h1>
-    <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="100" width="200">
-  <% }) %>
+  </div>
 </div>
+
+<div class="container">
+  <h2 class="fom-center">My Super Cars:</h2>
+  <p></p>
+  <div class="">
+    <% cars.forEach((car) => { %>
+      <h5><span class="profile-page">Make: </span><%= car.make %></h5>
+      <h5><span class="profile-page">Model: </span><%= car.model %></h5>
+      <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="50%" width="50%">
+    <% }) %>
+  </div>
+</div>
+
+<p></p>

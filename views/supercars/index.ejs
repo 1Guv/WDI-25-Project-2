@@ -1,15 +1,20 @@
-<h1>SUPERCARS INDEX</h1>
+<h2 class="fom-center">Supercars List View</h2>
 
-<div class="">
-  <a class="rbtn" href="/map">MAP</a>
-  <a class="rbtn" href="/supercars/">LIST</a>
+<div class="fom-center">
+  <a class="bbtn" href="/map">MAP</a>
+  <a class="bbtn" href="/supercars/">LIST</a>
 </div>
 
 <div class="map1" data-user="<%= JSON.stringify(user) %>"></div>
 
-<% supercars.forEach((car) => { %>
-  <h1><%= car.make %></h1>
-  <h1><%= car.model %></h1>
-  <h1><%= car.carpic %></h1>
-  <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="100" width="200">
-<% }) %>
+
+
+<div class="conatiner">
+  <div class="row col-md-8">
+    <% supercars.forEach((car) => { %>
+      <h5><span class="profile-page">Make: </span><%= car.make %></h5>
+      <h4><span class="profile-page">Model: </span><%= car.model %></h4>
+      <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="25%" width="25%">
+    <% }) %>
+  </div>
+</div>
