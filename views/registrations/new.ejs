@@ -1,55 +1,59 @@
 <h1>REGISTER</h1>
 <div class="form">
   <form method="POST" action="/register" enctype="multipart/form-data">
+    <input type="hidden" name="lat">
+    <input type="hidden" name="lng">
     <div>
-      <label for="fname">First Name</label>
-      <br>
-      <input type="text" name="fname" id="fname">
+      <label class="form-group" for="fname">First Name</label>
+      <input class="form-control" type="text" name="fname" id="fname">
     </div>
     <div>
-      <label for="sname">Second Name</label>
-      <br>
-      <input type="text" name="sname" id="sname">
+      <label class="form-group" for="sname">Second Name</label>
+
+      <input class="form-control" type="text" name="sname" id="sname">
     </div>
     <div>
-      <label for="addressLine1">Address - Line 1:</label>
-      <br>
-      <input type="text" name="addressLine1" id="addressLine1">
+      <label class="form-group" for="addressLine1">Address - Line 1:</label>
+
+      <input class="form-control" type="text" name="addressLine1" id="addressLine1">
     </div>
     <div>
-      <label for="addressLine2">Address - Line 2:</label>
-      <br>
-      <input type="text" name="addressLine2" id="addressLine2">
+      <label class="form-group" for="addressLine2">Address - Line 2:</label>
+
+      <input class="form-control" type="text" name="addressLine2" id="addressLine2">
     </div>
     <div>
-      <label for="postcode">Postcode:</label>
+      <label class="form-group" for="postcode">Postcode:</label>
       <br>
-      <input type="text" name="postcode" id="postcode">
+      <input class="autocomplete" type="text" name="postcode" id="postcode">
+      <input type="hidden" name="lat">
+      <input type="hidden" name="lng">
+    </div>
+
+    <div>
+      <label class="form-group" for="image">Profile Pic:</label>
+
+      <input class="" type="file" name="image" id="image">
     </div>
     <div>
-      <label for="image">Profile Pic:</label>
-      <br>
-      <input type="file" name="image" id="image">
+      <label class="form-group" for="username">Username:</label>
+
+      <input class="form-control" type="text" name="username" id="username">
     </div>
     <div>
-      <label for="username">Username:</label>
-      <br>
-      <input type="text" name="username" id="username">
+      <label class="form-group" for="email">Email</label>
+
+      <input class="form-control" type="email" name="email" id="email">
     </div>
     <div>
-      <label for="email">Email</label>
-      <br>
-      <input type="email" name="email" id="email">
+      <label class="form-group" for="password">Password</label>
+
+      <input class="form-control" type="password" name="password" id="password">
     </div>
     <div>
-      <label for="password">Password</label>
-      <br>
-      <input type="password" name="password" id="password">
-    </div>
-    <div>
-      <label for="passwordConfirmation">Password Confirmation</label>
-      <br>
-      <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+      <label class="form-group" for="passwordConfirmation">Password Confirmation</label>
+
+      <input class="form-control" type="password" name="passwordConfirmation" id="passwordConfirmation">
     </div>
 
     <button class="rbtn">Register</button>

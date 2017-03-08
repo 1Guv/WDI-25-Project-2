@@ -1,9 +1,23 @@
 'use strict';
 
+/* global google: true */
+
 $(function () {
 
   // const greeting = 'yo yo';
   // console.log(`${greeting} Guv`);
+
+  var $input = $('.autocomplete');
+  var autocomplete = new google.maps.places.Autocomplete($input[0]);
+  autocomplete.addListener('place_changed', function () {
+    var $lat = $('input[name=lat]');
+    var $lng = $('input[name=lng]');
+
+    var place = autocomplete.getPlace();
+    var location = place.geometry.location.toJSON();
+    $lat.val(location.lat);
+    $lng.val(location.lng);
+  });
 
   var userPostcodesArr = [];
 
@@ -31,13 +45,17 @@ $(function () {
     return false;
   });
 
-  users.forEach(function (user) {
-    console.log(user.postcode);
-    userPostcodesArr.push(user.postcode);
-    console.log(userPostcodesArr);
-  });
+  if ($('.map1').length) {
+    users.forEach(function (user) {
+      console.log(user.postcode);
+      console.log(user.lat);
+      console.log(user.lng);
+      userPostcodesArr.push(user.postcode);
+      console.log(userPostcodesArr);
+    });
+  }
 
-  initMap();
+  if ($('.map1').length) initMap();
 
   function initMap() {
     var uluru = { lat: 51.515113, lng: -0.072051 };
@@ -50,4 +68,7 @@ $(function () {
       map: map
     });
   }
+
+  // global google  autocomplete
+
 });

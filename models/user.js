@@ -10,7 +10,9 @@ const userSchema = new mongoose.Schema({
   addressLine1: {type: String},
   addressLine2: {type: String},
   postcode: {type: String},
-  image: {type: String}
+  image: {type: String},
+  lat: {type: Number},
+  lng: {type: Number}
 });
 
 userSchema

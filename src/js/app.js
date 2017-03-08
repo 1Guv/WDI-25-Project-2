@@ -1,7 +1,21 @@
+/* global google: true */
+
 $(() => {
 
   // const greeting = 'yo yo';
   // console.log(`${greeting} Guv`);
+
+  const $input = $('.autocomplete');
+  const autocomplete = new google.maps.places.Autocomplete($input[0]);
+  autocomplete.addListener('place_changed', () => {
+    const $lat = $('input[name=lat]');
+    const $lng = $('input[name=lng]');
+
+    const place = autocomplete.getPlace();
+    const location = place.geometry.location.toJSON();
+    $lat.val(location.lat);
+    $lng.val(location.lng);
+  });
 
   var userPostcodesArr = [];
 
@@ -29,13 +43,17 @@ $(() => {
     return false;
   });
 
-  users.forEach((user) => {
-    console.log(user.postcode);
-    userPostcodesArr.push(user.postcode);
-    console.log(userPostcodesArr);
-  });
+  if($('.map1').length) {
+    users.forEach((user) => {
+      console.log(user.postcode);
+      console.log(user.lat);
+      console.log(user.lng);
+      userPostcodesArr.push(user.postcode);
+      console.log(userPostcodesArr);
+    });
+  }
 
-  initMap();
+  if ($('.map1').length) initMap();
 
 
   function initMap() {
@@ -49,6 +67,8 @@ $(() => {
       map: map
     });
   }
+
+// global google  autocomplete
 
 
 

@@ -1,26 +1,12 @@
 <h1>Supercar Map</h1>
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
 
-    </style>
-  </head>
-  <body>
+<div class="">
+  <a class="rbtn" href="/map">MAP</a>
+  <a class="rbtn" href="/supercars/">LIST</a>
+</div>
+<br>
 
-    <div class="">
-      <a class="rbtn" href="/map">MAP</a>
-      <a class="rbtn" href="/supercars/">LIST</a>
-    </div>
-    <br>
-    
 
-    <div class="map1" data-users="<%= JSON.stringify(users) %>"></div>
+<div class="map1" data-users="<%= JSON.stringify(users) %>"></div>
 
-    <div id="map"></div>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWUjCRkGFvj_nc2q0-gbYNcdeNQhH0FLg&callback=initMap">
-    </script>
-  </body>
-</html>
+<div id="map"></div>
