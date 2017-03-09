@@ -22,10 +22,6 @@ Map of current super cars in London:
 
 ![Supercar Car Swap](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/screen-shot-3-new.jpg?raw=true "Supercar Car Swap map")
 
-User profile page:
-
-![Supercar Car Swap](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Screen-Shot-3.png?raw=true "Supercar Car Swap map")
-
 ##Approach / How it works:
 
 * When you enter the website you will need to register to get full access or read about how it works.
@@ -38,13 +34,13 @@ User profile page:
 * Attempted to make a full restfull app using an API
 * Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the website.
 * Used Google Map API to show supercars on the map in London.
-* Used Trello for my project board 
+* Used Trello for my project board:
 
 ![Trello](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Trello-Project-2.png?raw=true "Trello")
 
-* Used Balsamiq for my wireframing (https://generalassembly.mybalsamiq.com/projects/wdi-ldn-25/Guv%20-%20Project%202)
+* Used Balsamiq for my wireframing:
 
-![Trello](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Trello-Project-2.png?raw=true "Trello")
+![Balsamiq](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Balsamiq-Project-2.png?raw=true "Trello")
 
 
 ##Problems & Challenges:
