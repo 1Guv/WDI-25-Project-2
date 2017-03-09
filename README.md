@@ -14,7 +14,7 @@ At the moment you can only search for supercars once you are a fully paid member
 
 The game is not fully responsive at this time as this is an ongoing project.
 
-![Animal Conundrum - Mobile screen shot 1](https://github.com/1Guv/project-1/blob/master/images/AC-mobile-1-small.jpeg?raw=true "Animal Word Conundrum - Mobile screen shot")
+![Supercar Car Swap](https://github.com/1Guv/project-1/blob/master/images/AC-mobile-1-small.jpeg?raw=true "Animal Word Conundrum - Mobile screen shot")
 
 Home page screen shot below:
 
