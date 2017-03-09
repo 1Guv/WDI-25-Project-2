@@ -12,7 +12,7 @@ At the moment you can only search for supercars once you are a fully paid member
 
 [Check it out here - Supercar Swap Club](https://fast-atoll-53678.herokuapp.com/)
 
-The game is not fully responsive at this time and is an ongoing project.
+The app is also fully responsive and ongoing project.
 
 Supercar Car Swap Homepage:
 
