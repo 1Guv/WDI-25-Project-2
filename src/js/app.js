@@ -62,7 +62,7 @@ $(() => {
     var london = {lat: 51.515113, lng: -0.072051};
 
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
+      zoom: 13,
       center: london
     });
 

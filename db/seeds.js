@@ -17,8 +17,6 @@ User
     password: 'password',
     fname: 'Guv',
     lname: 'Sandhu',
-    addressLine1: '43 Devons Rd, Flat 7',
-    addressLine2: 'London',
     postcode: 'E3 3DT',
     image: 'http://images.parkers.bauercdn.com/gallery-image/external/cfs/usedcfs-237524544419648/-1771403020/1752x1168/1.jpg',
     passwordConfirmation: 'password'
@@ -30,12 +28,6 @@ User
         make: 'Mercedes Benz',
         model: 'GLE 63',
         carpic: 'http://images.parkers.bauercdn.com/gallery-image/external/cfs/usedcfs-237524544419648/-1771403020/1752x1168/1.jpg',
-        stars: 4,
-        createdBy: users[0]
-      },{
-        make: 'Bentley',
-        model: 'Bentayga SUV',
-        carpic: 'http://images.parkers.bauercdn.com/gallery-image/external/cfs/usedcfs-533524543950507/604672993/1752x1168/3.jpg',
         stars: 4,
         createdBy: users[0]
       }]);

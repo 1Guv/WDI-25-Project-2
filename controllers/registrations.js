@@ -21,8 +21,6 @@ function createRoute(req, res, next) {
 
 }
 
-
-
 module.exports = {
   new: newRoute,
   create: createRoute

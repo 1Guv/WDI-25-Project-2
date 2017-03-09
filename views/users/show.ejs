@@ -6,11 +6,19 @@
       <h5><span class="profile-page">Surname: </span><%= user.sname %></h5>
       <h5><span class="profile-page">Email: </span><%= user.email %></h5>
       <h5><span class="profile-page">Address: </span><%= user.postcode %></h5>
+
+
       <div class="">
         <br>
         <a class="bbtn" href="#">EDIT</a>
-        <a class="bbtn" href="#">DELETE MY ACCOUNT</a>
+
+        <form method="POST" action="/users/<%= user.id %>">
+          <input type="hidden" name="_method" value="DELETE">
+          <button class="bbtn">Delete Account</button>
+        </form>
+        <%# <a class="bbtn" href="#">DELETE MY ACCOUNT</a>%>
       </div>
+
     </div>
     <div class="col-md-4 fom-center">
       <h2><span class="profile-page">Username:</span></h2>

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const s3 = require('../lib/s3');
 
 const userSchema = new mongoose.Schema({
   username: {type: String, required: true},
@@ -47,5 +48,9 @@ userSchema.pre('save', function hashPassword(next) {
 userSchema.methods.validatePassword = function validatePassword(password) {
   return bcrypt.compareSync(password, this.password);
 };
+
+userSchema.pre('remove', function removeImage(next) {
+  s3.deleteObject({ Key: this.image }, next);
+});
 
 module.exports = mongoose.model('User', userSchema);
