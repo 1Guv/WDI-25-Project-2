@@ -38,8 +38,14 @@ User profile page:
 * Attempted to make a full restfull app using an API
 * Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the website.
 * Used Google Map API to show supercars on the map in London.
-* Used Trello for my project board (https://trello.com/b/qyJHOHdt/wdi-25-project-2)
+* Used Trello for my project board 
+
+![Trello](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Trello-Project-2.png?raw=true "Trello")
+
 * Used Balsamiq for my wireframing (https://generalassembly.mybalsamiq.com/projects/wdi-ldn-25/Guv%20-%20Project%202)
+
+![Trello](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Trello-Project-2.png?raw=true "Trello")
+
 
 ##Problems & Challenges:
 
