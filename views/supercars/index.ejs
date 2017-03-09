@@ -9,12 +9,16 @@
 
 
 
-<div class="conatiner">
-  <div class="row col-md-8">
-    <% supercars.forEach((car) => { %>
+<div class="container">
+  <% supercars.forEach((car) => { %>
+  <div class="row col-md-6">
+      <br>
       <h5><span class="profile-page">Make: </span><%= car.make %></h5>
-      <h4><span class="profile-page">Model: </span><%= car.model %></h4>
-      <img src="<%= car.imageSRC %>" alt="<%= car.make %>" height="25%" width="25%">
-    <% }) %>
+      <h5><span class="profile-page">Model: </span><%= car.model %></h5>
+      <img class="car-list" src="<%= car.imageSRC %>" alt="<%= car.make %>" height="60%" width="60%">
+      <br>
+      <br>
+      <br>
   </div>
+    <% }) %>
 </div>
