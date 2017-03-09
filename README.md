@@ -20,7 +20,7 @@ Supercar Car Swap Homepage:
 
 Map of current super cars in London:
 
-![Supercar Car Swap](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Screen-Shot-2.png?raw=true "Supercar Car Swap map")
+![Supercar Car Swap](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/screen-shot-3-new.jpg?raw=true "Supercar Car Swap map")
 
 User profile page:
 
@@ -38,15 +38,15 @@ User profile page:
 * Attempted to make a full restfull app using an API
 * Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the website.
 * Used Google Map API to show supercars on the map in London.
+* Used Trello for my project board (https://trello.com/b/qyJHOHdt/wdi-25-project-2)
+* Used Balsamiq for my wireframing (https://generalassembly.mybalsamiq.com/projects/wdi-ldn-25/Guv%20-%20Project%202)
 
 ##Problems & Challenges:
 
 
-The main challenge that I encountered was creatng the restful routes and organising the sliding screens so the right screen activated and slid in or out depending on the current screen the user was viewing. I also made sure that the screen size was dynamically adjusted for the users viewing experience.
+The main challenge that I encountered was creatng the restful routes and organising my schema so it met the objectives of the project. I might need to revisit this when I add the extra functionality listed below.
 
-I spent a lot of time thinking about where to position the various elements so not to clutter the screen and to make it as simple as possible as well as intuitive.
-
-The game logic was developed quickly after the whole page was setup and styled accordingly. The game engine was then tweaked even further to provide the visual confirmation of the correct and incorrect answers and then I added extra functionality as I continued developing the game. Further testing revealed more bugs which were quickly fixed.
+The main blocker was time, so many things needed attention I used Trello to document the most impirtant tasks for MVP knowing that I could add the extra functionality later on.
 
 ##If I had more time I would:
 
