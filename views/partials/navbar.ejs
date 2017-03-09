@@ -25,21 +25,21 @@
           <%# <li><a href="/Cars/new">Add Car</a></li>%>
 
           <% if(locals.isAuthenticated) { %>
-            <li class="">
-              <a class="" href="/map">Map</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/map">Map</a>
             </li>
-                <li class="">
-                  <a class="" href="/logout">Logout</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">Logout</a>
                 </li>
                 <li>
-                <a class="" href="/users/<%= user.id %>">Profile</a>
+                <a class="nav-item" href="/users/<%= user.id %>">Profile</a>
                 </li>
               <% } else { %>
-                <li class="">
-                  <a class="" href="/login">Log In</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Log In</a>
                 </li>
-                <li class="">
-                  <a class="" href="/register">Register</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
                 </li>
               <% } %>
         </ul>
