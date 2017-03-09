@@ -4,15 +4,20 @@
 
 This website takes the car rental theme but with an added twist. The idea is that super car owners in London may want to drive other supercars. This evolved into a supercar swap club, where paid members would be able to contact each other and arrange to swap supercars in London. I kept the locality to London, as I didnt think that a supercar car swap would work if the distance was too great.
 
-This version concentrates on London, but this could easily be replicated to other cities so members would have access to local supercars in there area. 
+This version concentrates on London, but this could easily be replicated to other cities so members would have access to local supercars in their area. 
 
 At the moment you can only search for supercars once you are a fully paid member. The membership fee will be high to deter non supercar owners.
 
-(Currently I have omitted the payment option and any other secuirty checks for this project)
+(Currently I have omitted the payment option and any other security checks for this project)
 
 [Check it out here - Supercar Swap Club](https://fast-atoll-53678.herokuapp.com/)
 
 The app is also fully responsive and ongoing project.
+
+Supercar Car Swap - mobile app screen shot
+
+![Supercar Car Swap](https://github.com/1Guv/WDI-25-Project-2/blob/master/src/assets/images/Screen%20Shot%202017-03-09%20at%2023.01.26.png?raw=true "Supercar Car Swap homepage screen shot")
+
 
 Supercar Car Swap Homepage:
 
@@ -61,3 +66,4 @@ The main blocker was time, so many things needed attention I used Trello to docu
 - Add car authentication by inputting the inidvidual registration
 - Add a car gallery for each member
 - Add another API to auto populate more information about each vehicle
+- Add Google, Facebook and GitHub logins
