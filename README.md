@@ -36,7 +36,7 @@ Map of current super cars in London:
 
 ##The build:
 
-* Attempted to make a full restfull app using an API
+* The project was to build a full restfull app using an API
 * Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the website.
 * Used Google Map API to show supercars on the map in London.
 * Used Trello for my project board:
@@ -67,3 +67,5 @@ The main blocker was time, so many things needed attention I used Trello to docu
 - Add a car gallery for each member
 - Add another API to auto populate more information about each vehicle
 - Add Google, Facebook and GitHub logins
+- Add secure routes
+- Add customised Google map

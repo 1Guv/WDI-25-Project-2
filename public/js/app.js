@@ -4,9 +4,6 @@
 
 $(function () {
 
-  // const greeting = 'yo yo';
-  // console.log(`${greeting} Guv`);
-
   // Google Address Autocomplete
   var $input = $('.autocomplete');
   var autocomplete = new google.maps.places.Autocomplete($input[0]);

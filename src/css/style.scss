@@ -203,7 +203,39 @@ a.navbar-brand.logo {
 
 @media only screen and (max-width: 640px) {
 
-  
+  .mobile-center {
+    text-align: center;
+  }
+
+  .bbtn {
+    background: #fff;
+    background-image: -webkit-linear-gradient(top, #ffff, #ffff);
+    background-image: -moz-linear-gradient(top, #ffff, #ffff);
+    background-image: -ms-linear-gradient(top, #ffff, #ffff);
+    background-image: -o-linear-gradient(top, #ffff, #ffff);
+    background-image: linear-gradient(to bottom, #ffff, #ffff);
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    // font-weight: 700;
+    letter-spacing: 1px;
+    color: #ebc632;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    border: solid #ebc632 2px;
+    text-decoration: none;
+    outline: none;
+    margin: 10px;
+  }
+
+  .bbtn:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    border: solid black 2px;
+    color: black;
+  }
 
   .rbtn {
     // background: #fff;
@@ -219,7 +251,7 @@ a.navbar-brand.logo {
     font-style: normal;
     font-weight: 300;
     letter-spacing: 1px;
-    color: #ebc632;
+    color: black;
     font-size: 8px;
     padding: 5px 10px 5px 10px;
     border: solid #fafafa 2px;

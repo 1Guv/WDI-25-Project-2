@@ -2,9 +2,6 @@
 
 $(() => {
 
-  // const greeting = 'yo yo';
-  // console.log(`${greeting} Guv`);
-
   // Google Address Autocomplete
   const $input = $('.autocomplete');
   const autocomplete = new google.maps.places.Autocomplete($input[0]);
