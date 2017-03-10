@@ -36,17 +36,19 @@ $(function () {
   function tagLineRotation() {
     setInterval(function () {
       // console.log(listOfModels[currentIndex]);
+
       $('#tag-line-1').text(listOfModels[currentIndex]);
       currentIndex++;
-      if (currentIndex === listOfModels.length) currentIndex = 0;
-    }, 500);
 
-    $('a').click(function () {
-      $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-      }, 500);
-      return false;
-    });
+      if (currentIndex === listOfModels.length) currentIndex = 0;
+    }, 2000);
+
+    // $('a').click(function(){
+    //   $('html, body').animate({
+    //     scrollTop: $( $(this).attr('href') ).offset().top
+    //   }, 500);
+    //   return false;
+    // });
   }
 
   // goes throught the users object to get the postcode then use geoloacter to convert to lat and long, however used Google address autocomplate instead to convert address into lat & lng automatically from the registrationpage and store in the database
