@@ -36,8 +36,9 @@ Map of current super cars in London:
 
 ##The build:
 
-* The project was to build a full restfull app using an API
-* Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the website.
+
+* The project is to build a full-stack RESTful application that includes authentication
+* Used Node, Express, Ajax, JSON, JS, MongoDB, HTML 5, CSS and jQuery were used to create the app.
 * Used Google Map API to show supercars on the map in London.
 * Used Trello for my project board:
 
